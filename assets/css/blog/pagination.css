@@ -3,3 +3,27 @@
     justify-content: center;
     margin-top: 48px;
 }
+
+.tag-counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 48px;
+    padding: 24px 0;
+}
+
+.tag-count-item {
+    padding: 8px 16px;
+    background-color: var(--color-secondary-bg);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.tag-count-item:hover {
+    background-color: var(--color-border);
+    transform: translateY(-2px);
+}

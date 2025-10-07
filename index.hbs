@@ -10,4 +10,16 @@
 
     {{pagination}}
 
+    {{#if @custom.show_tag_counts}}
+        {{#get "tags" limit="all" include="count.posts"}}
+            {{#if tags}}
+                <div class="tag-counts gh-canvas">
+                    {{#foreach tags}}
+                        <a href="{{url}}" class="tag-count-item">{{name}}({{count.posts}})</a>
+                    {{/foreach}}
+                </div>
+            {{/if}}
+        {{/get}}
+    {{/if}}
+
 </main>
