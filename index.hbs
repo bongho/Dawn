@@ -11,7 +11,7 @@
     {{pagination}}
 
     {{#if @custom.show_tag_counts}}
-        {{#get "tags" limit="all" include="count.posts"}}
+        {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
             {{#if tags}}
                 <div class="tag-counts gh-canvas">
                     {{#foreach tags}}
