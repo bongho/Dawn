@@ -7,23 +7,25 @@
 .tag-counts {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
     margin-top: 48px;
     padding: 24px 0;
+    line-height: 1.8;
 }
 
 .tag-count-item {
-    padding: 8px 16px;
-    background-color: var(--color-secondary-bg);
-    border-radius: 4px;
     text-decoration: none;
-    color: var(--color-text);
-    font-size: 0.875rem;
-    transition: all 0.2s ease;
+    color: var(--color-secondary-text);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.tag-count-item:before {
+    content: "# ";
 }
 
 .tag-count-item:hover {
-    background-color: var(--color-border);
-    transform: translateY(-2px);
+    color: var(--color-darker-gray);
 }
